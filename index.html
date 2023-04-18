@@ -1,14 +1,37 @@
-
-<body>
-    <h1>Welcome!</h1>
-    <p>You have been granted access to the platform.
-         Please create an account.</p>
-         <input type="text" placeholder="Enter username"><br>
-         <input type="password" placeholder="Password"><br>
-         <input type="password" placeholder="Confirm password"><br>
-         <input type="file" ><br>
-         <button>Sign up!</button>
-         
-
-        </body>
-        
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Log in</title>
+    </head>
+    <!-- <script type="text/javascript">
+                alert("Form Submitted");
+                console.log("Page has been submitted")
+            </script> -->
+    <body id="form">
+        <div class="header">
+            <h1>Welcome!</h1>
+            <h3>You have been granted access to the platform.</h3>
+        </div>
+        <div class="login">
+            <form id="login" method="get" action="/google.html">
+                <label for="full name">Full name</label>
+                <input type="text" name="Full name" id="full name"><br><br>
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" id="full name"><br><br>
+                <label for="phone number">Phone Number</label>
+                    <input type="number" placeholder="Phone Number" id="number"><br><br>
+                <select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="non-binary">Non-binary</option><br><br>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                </select>
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>
